@@ -6,8 +6,100 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "calculate",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "people",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "favoriteNumber",
+				"name": "person",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -56,10 +148,10 @@
 	},
 	"sources": {
 		"contracts/SolidityStorage.sol": {
-			"keccak256": "0x6930469e8b44be45ed4a0c996c9dc14853c05d77a6598899aefb2db084562d9c",
+			"keccak256": "0xd9775992aa7fe2c50e6dda7f875073308e8dc97dea259df5f4638c5fc34ee99f",
 			"urls": [
-				"bzz-raw://dd5f5c26caca72df2382c2d19021a222bd40179e7ac3f148b5d9c62d0d628528",
-				"dweb:/ipfs/QmU4DAAGmzsxbx2rxsdyxMhmWLQbLo9DfNndFcMU2anC8k"
+				"bzz-raw://573288af43c68933c2574372022e6d81c5134523ae7b202d6df474b681df31ad",
+				"dweb:/ipfs/Qmd1sz92BP13GW1BHBRf9VF5ErzvbuV7QDELpZWuf7J97A"
 			]
 		}
 	},
